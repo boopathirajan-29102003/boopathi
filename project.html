@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/project.css">
+    <link rel="stylesheet" href="./css/certificate.css">
+    <script src="./java_script/home.js"></script>
+    <!-- FontAwesome 5 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <style>
+          .modal-content {
+    margin: 0 auto;
+    display: block;
+    max-height: 600px;
+    max-width: 900px;
+  }
+  
+  </style>
+</head>
+<body>
+    <!-- Navbar top -->
+    <div class="navbar-top">
+        <div class="title">
+            <h1>Project</h1>
+        </div>
+    </div>
+    <!-- End -->
+
+    <!-- Sidenav -->
+    <div class="sidenav">
+        <div class="profile">
+            <img src="./images/Boopathirajan.png" alt="" width="100" height="100">
+
+            <div class="name">
+                Boopathirajan S
+            </div>
+        </div>
+
+        <div class="sidenav-url">
+            
+            <div class="url">
+                <a href="./index.html" class="active" id="p1">Profile</a>
+                <hr align="center">
+            </div>
+            <div class="url" >
+                <a href="./certificate.html" id="p2" > Certifications</a>
+                <hr align="center">
+            </div>
+            <div class="url"  >
+                <a href="./project.html" id="p3">Projects</a>
+                <hr align="center">
+            </div>
+        </div>
+    </div>
+    <!-- End -->
+
+
+
+
+
+    <div class="main">
+        <h2>E-Commerce Website</h2>
+        <div class="card">
+            <div class="container">
+                <div class="image-container">
+                    <img src="./images/E-commerce/home.png" onclick="openModal(this.src)" class="pro_img" alt="Image" >
+                </div>
+                <div class="image-container">
+                    <img src="./images/E-commerce/product.png" onclick="openModal(this.src)" class="pro_img" alt="Image" >
+                </div>
+                <div class="image-container">
+                    <img src="./images/E-commerce/contact.png" onclick="openModal(this.src)" class="pro_img" alt="Image" >
+                </div>
+                </div>
+                <div class="container">
+                    <div class="image-container">
+                        <img src="./images/E-commerce/login.png" onclick="openModal(this.src)" class="pro_img" alt="Image" >
+                    </div>
+                </div>
+            <br><br><p class="para"><a href="https://github.com/boopathirajan-29102003/E_Commerce_Website" class="sp-style" target="_blank">Click here!</a> for source github repository..</p>
+            <br><p class="para"><a href="https://boopathirajan-29102003.github.io/E_Commerce_Website/" class="sp-style" target="_blank">Click here!</a> for Sample Deployment of the page..</p>
+        </div>
+    </div>
+    <div class="main">
+        <h2>Stone Paper Scissor Game</h2>
+    <div class="card">
+        <div class="container">
+            <div class="image-container">
+                <img src="./images/RPS_Game/ex_3.png" onclick="openModal(this.src)" class="pro_img" alt="Image" >
+            </div>
+            <div class="image-container">
+                <img src="./images/RPS_Game/ex_1.png" onclick="openModal(this.src)" class="pro_img" alt="Image" >
+            </div>
+            <div class="image-container">
+                <img src="./images/RPS_Game/ex_2.png" onclick="openModal(this.src)" class="pro_img" alt="Image" >
+            </div>
+        </div>
+
+        
+            <br><br><p class="para"><a href="https://github.com/boopathirajan-29102003/RPS_Game" class="sp-style" target="_blank">Click here!</a> for source github repository..</p>
+            <br><p class="para"><a href="https://boopathirajan-29102003.github.io/RPS_Game/" class="sp-style" target="_blank">Click here!</a> for Sample Deployment of the page..</p>
+        </div>
+    </div>
+    
+    
+    <!--main end-->
+</body>
+<script>
+        // Get the modal element
+        var modal = document.getElementById("myModal");
+        
+        // Get the image element and modal image element
+        var modalImage = document.getElementById("modalImage");
+        
+        // Get the close button element
+        var closeBtn = document.getElementsByClassName("close")[0];
+        
+        // Function to open the modal
+        function openModal(src) {
+        modal.style.display = "block";
+        modalImage.src = src;
+        }
+        
+        // Function to close the modal
+        function closeModal() {
+        modal.style.display = "none";
+        }
+        
+        // Event listener for the close button
+        closeBtn.addEventListener("click", closeModal);
+    </script>
+</html>

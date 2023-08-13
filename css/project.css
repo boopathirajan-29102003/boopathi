@@ -1,0 +1,24 @@
+.para{
+    font-size: 20px;
+}
+.sp-style{
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+}
+.pro_img{
+    max-height:200px;
+    max-width:275px;
+    border: 2px solid black;
+}
+.pro_img:hover{
+    box-shadow: 2px 3px 8px rgb(116, 116, 116);
+}
+@media screen and (max-width:700px) {
+    .modal{
+        display: none;
+    }
+    .modelImage{
+        display: none;
+        visibility: hidden;
+    }
+}
